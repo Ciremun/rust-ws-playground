@@ -1,0 +1,17 @@
+[package]
+name = "rust-ws-playground"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0.5.13", features = ["ws"] }
+include_dir = "0.7.2"
+mime_guess = "2.0.4"
+rand = "0.8.5"
+tokio = { version = "1.20.1", features = ["full"] }
+
+[[bin]]
+name = "rust-ws-playground"
+path = "main.rs"
