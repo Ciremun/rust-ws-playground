@@ -3,7 +3,7 @@ function request_random_number() {
 }
 
 window.onload = () => {
-    window.ws = new WebSocket(`ws://${location.host}/ws`);
+    window.ws = new WebSocket(`wss://${location.host}/ws`);
 
     ws.onopen = () => {
         console.log("JavaScript: Socket Connected!");
